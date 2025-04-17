@@ -9,15 +9,16 @@ app.use(express.json());
 
 let posts = [];
 
+//create Routes
 app.get("/", (req, res) => {
   res.send("Express API is running...")
 });
 
-app.get("/post", (req, res) => {
+app.get("/posts", (req, res) => {
   res.json(posts)
 });
 
-app.post("/post", (req, res) => {
+app.post("/posts", (req, res) => {
   const {title , content} = req.body
   const newPost = {
     id: posts.length + 1,
