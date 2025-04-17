@@ -1,0 +1,15 @@
+GET  http://localhost:3000
+
+###
+
+GET http://localhost:3000/post
+
+###
+
+POST http://localhost:3000/post
+Content-Type: application/json
+
+{
+    "title": "This is peak coding",
+    "content": "You can have multiple items"
+}
